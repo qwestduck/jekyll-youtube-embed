@@ -16,7 +16,7 @@ module Jekyll
             @height = $3.to_i
         end
       else
-        raise "No YouTube ID provided in the \"youtube-embed\" tag"
+        raise "No YouTube ID provided in the \"youtube_embed\" tag"
       end
     end
 
@@ -26,4 +26,4 @@ module Jekyll
   end
 end
 
-Liquid::Template.register_tag("youtube-embed", Jekyll::YoutubeEmbedTag)
+Liquid::Template.register_tag("youtube_embed", Jekyll::YoutubeEmbedTag)
