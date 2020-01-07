@@ -12,8 +12,8 @@ module Jekyll
             @width = 560
             @height = 420
         else
-            @width = $2.to_i
-            @height = $3.to_i
+            @width = $3.to_i
+            @height = $4.to_i
         end
       else
         raise "No YouTube ID provided in the \"youtube_embed\" tag"
